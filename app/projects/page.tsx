@@ -2,10 +2,10 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function ProjectsPage() {
   return (
-    <div className="space-y-10">
-      <h1 className="text-4xl font-bold">Projects</h1>
+    <div className="space-y-10 text-slate-100">
+      <h1 className="text-4xl font-bold text-white">Projects</h1>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid gap-6 md:grid-cols-2">
         <ProjectCard
           title="CodeCooks"
           description="A recipe sharing and meal planning web app built with Next.js, Tailwind, and PostgreSQL."
