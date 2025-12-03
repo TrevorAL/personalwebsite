@@ -7,7 +7,7 @@ export default function ContactPage() {
     {
       label: "Email",
       href: "mailto:tlachman4@gmail.com",
-      detail: "trevorlachman@gmail.com",
+      detail: "tlachman4@gmail.com",
       description: "Fastest way to reach me for projects or questions.",
     },
     {
@@ -45,16 +45,21 @@ export default function ContactPage() {
       <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr]">
         <div className="space-y-6 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/30 backdrop-blur">
           <div className="space-y-2">
-            <h2 className="text-2xl font-semibold text-white">Best ways to reach me</h2>
+            <h2 className="text-2xl font-semibold text-white">
+              Best ways to reach me
+            </h2>
             <p className="text-slate-200">
-              I generally respond within a day. Drop a note and include any context that
-              helps me prep.
+              I generally respond within a day. Drop a note and include any
+              context that helps me prep.
             </p>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
             <CTAButton href="mailto:tlachman4@gmail.com">Email me</CTAButton>
-            <CTAButton href="https://www.linkedin.com/in/trevor-lachman/" variant="ghost">
+            <CTAButton
+              href="https://www.linkedin.com/in/trevor-lachman/"
+              variant="ghost"
+            >
               Say hi on LinkedIn
             </CTAButton>
           </div>
@@ -88,8 +93,12 @@ export default function ContactPage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-300">
                   {method.label}
                 </p>
-                <p className="mt-1 text-lg font-semibold text-white">{method.detail}</p>
-                <p className="mt-2 text-sm text-slate-200">{method.description}</p>
+                <p className="mt-1 text-lg font-semibold text-white">
+                  {method.detail}
+                </p>
+                <p className="mt-2 text-sm text-slate-200">
+                  {method.description}
+                </p>
               </a>
             ))}
           </div>
